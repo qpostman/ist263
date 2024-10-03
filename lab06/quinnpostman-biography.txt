@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<body>
+    <h1> Quinn Postman Biography </h1>
+<p>
+    Quinn Postman is a sophomore student at <strong>Syracuse University</strong>.
+    He is majoring in Magazine, News & Digital Journalism at the S.I. 
+    Newhouse School of Public Communications and Innovation, Society & Technology at
+    School of Information Studies. 
+</p>
+
+<p>
+    His hometown is Haworth, New Jersey. Quinn lives with his parents, Chad and Mary.
+    He went to high school at Northern Valley Regional High School at Demarest. NVD is a collection 
+    of three towns: Haworth, Demarest, and Closter. Quinn played soccer and track & field in high school, winning
+    a league championship with NVD Boys soccer and a state championship with NVD Track & Field. Quinn
+    graduated high school in 2023. 
+</p>
+
+
+<h2>Personal Information</h2>
+<p>
+    Quinn's least favorite movies
+    <ul>
+        <li>Superbad</li>
+        <li>How Do You Know</li>
+        <li>Edward Scissorhands</li>
+    </ul>
+</p>
+<hr>
+&copy;&#50;&#48;&#50;&#48;
+</body>
+</html>
