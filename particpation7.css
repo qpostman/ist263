@@ -1,6 +1,6 @@
 .custom-paragraph{
-    color: #ee82ee;
     border: 2px solid blue;
+    background-color:#ee82ee
 }
 body{
     background-image:url(images/otto.png);
