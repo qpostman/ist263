@@ -1,0 +1,8 @@
+.custom-paragraph{
+    color: #ee82ee;
+    border: 2px solid blue;
+}
+body{
+    background-image:url(images/otto.png);
+    background-repeat: repeat;
+}
