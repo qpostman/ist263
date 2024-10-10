@@ -1,5 +1,9 @@
 body{font-family: Arial, Helvetica, sans-serif} 
-h1, h2{color:crimson;}
+body{color:#ff0000;}
+h1, h2{color:#00ffff}
 h1{font-size:medium;}
 h2{font-size:large;}
-.evenrows{background-color:hotpink}
+.evenrows{background-color:#ff00ff}
+nav{background-color: #8000ff;}
+nav a{color:#00ff00;}
+nav a{background-color:#00ffff}
