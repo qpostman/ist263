@@ -4,6 +4,8 @@ h1, h2{color:#00ffff}
 h1{font-size:medium;}
 h2{font-size:large;}
 .evenrows{background-color:#ff00ff}
-nav{background-color: #8000ff;}
+nav{background-color: #8000ff;
+  padding: 10px;
+ margin-bottom: 30px}
 nav a{color:#00ff00;}
 nav a{background-color:#00ffff}
