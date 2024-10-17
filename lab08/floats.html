@@ -5,7 +5,15 @@
 		<title>Floats and Flexbox Practice</title>
 		<meta charset="utf-8">
 		<style>
-			.img1 {float:left;}
+			.img1 {float:left; margin-right:10px}
+            .clear {clear:both;}
+            
+            .part2 {display:flex;}
+            .part2 article {padding: 20px;}
+            .article1, .article2,.article3 {margin:10px}
+            .article1 {flex:2; order:3;background-color: blueviolet;border-radius: 1em;}
+            .article2 {flex:1; order 2;background-color: cyan;border-radius: 1em;}
+            .article3 {flex:1; order 1;background-color:khaki;border-radius:1em;}
 		</style>
 	</head>
 	<body>
@@ -27,7 +35,6 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
             </article>
         </div>
-
         
         <h2>The Flexbox Part</h2>
         <div class="part2">

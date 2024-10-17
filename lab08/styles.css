@@ -9,3 +9,6 @@ nav{background-color: #8000ff;
  margin-bottom: 30px}
 nav a{color:#00ff00;}
 nav a{background-color:#00ffff}
+
+.copyright{float:left;}
+.quote{float:right;}
