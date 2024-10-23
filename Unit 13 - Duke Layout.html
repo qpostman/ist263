@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 13 - Duke Layout with Flexbox</title>
+    <style>
+        body {
+            font-family: "Open Sans", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Flex container for the layout */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Up Next section on the left */
+        .event-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Resources section on the right */
+        .resource-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Flexbox for resource items inside the Resources section */
+        .resource-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .resource-item {
+            flex: 1 1 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Style for images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Up Next Section (Left) -->
+        <div class="event-section">
+            <h2>Up Next</h2>
+            <div class="event">
+                <h3>Class of 2021 Pratt Master’s in-Person Recognition Celebration</h3>
+                <p>Monday, May 3<br> 9:00am to 11:00am<br> Cameron Indoor Stadium</p>
+            </div>
+            <div class="event">
+                <h3>Baseball vs. William and Mary</h3>
+                <p>Tuesday, May 4<br> 6:00pm to 6:00pm<br> Durham Bulls Athletic Park (DBAP)</p>
+            </div>
+            <div class="event">
+                <h3>Women’s Soccer vs Ole Miss at NCAA Tournament 3rd round</h3>
+                <p>Wednesday, May 5<br> 12:00pm to 12:00pm<br> Away/Neutral Site Game, See Description</p>
+            </div>
+        </div>
+
+        <!-- Resources Section (Right) -->
+        <div class="resource-section">
+            <h2>Resources</h2>
+            <div class="resource-items">
+                <div class="resource-item">
+                    <p>Duke Student Assistance Fund</p>
+                    <img src="student-assistance.jpg" alt="Duke Allen Building">
+                </div>
+                <div class="resource-item">
+                    <p>Duke Scholarship and Engagement on COVID-19</p>
+                    <img src="scholarship.jpg" alt="Dr. Barton Haynes">
+                </div>
+                <div class="resource-item">
+                    <p>Anti-Racism at Duke</p>
+                    <img src="anti-racism-tile.jpg" alt="Close up of chapel">
+                </div>
+                <div class="resource-item">
+                    <p>Keep Learning</p>
+                    <img src="keep-learning.jpg" alt="Lilly Library">
+                </div>
+                <div class="resource-item">
+                    <p>Flexible Teaching</p>
+                    <img src="keep-teaching.jpg" alt="Allen Building Entry">
+                </div>
+                <div class="resource-item">
+                    <p>Keep Working</p>
+                    <img src="keep-working.jpg" alt="Duke Chapel">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
