@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 10 Participation</title>
+    <style>
+        .large-text {display: block;}
+        .small-text {display:none;}
+        @media only screen and (max-width:800px) {
+            .small-text{display:block;}
+        }
+    </style>
+</head>
+<body>
+    <p class="large-text">I'm Large</p>
+    <p class="small-text">I'm Small</p>
+</body>
+</html>
