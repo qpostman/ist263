@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <link rel ="postman_stylesheet" href= "styles.css">
+    <style>
+      .row1,.row2{display:flex}
+      .row1 div, .row2 div {flex:1 ;background-color:aqua; margin: 10px;border-radius: 10px; padding: 20px;}
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li> |
+      <li><a href="skills.html">Skills</a></li> |
+      <li><a href="contact(1).html">Contact</a></li>
+    </ul>
+</nav>
+    <h1>Contact.</h1>
+
+    <div class="row1">
+      <div>
+        <p>
+          Quinn Postman<br>
+          231 Valley Court<br>
+          Haworth, NJ 07641<br>
+        </p>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/quinn-postman-9b376a21b/">My LinkedIn Profile</a>
+        <a href="https://www.linkedin.com/in/quinn-postman-9b376a21b/"><img src="../images/logo-sized.png" alt="LinkedIn Logo"></a>
+        <a href="malito:qdpostma@syr.edu">qdpostma@syr.edu</a><br>
+      </div>
+    </div>
+      
+    <div class="row2">
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.6030782543457!2d-73.98734552337174!3d40.964282571356755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2efcd19e050a5%3A0x5dba8ba0c4736ff4!2s231%20Valley%20Ct%2C%20Haworth%2C%20NJ%2007641!5e1!3m2!1sen!2sus!4v1726178951380!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div>
+        <form action = "https://formspree.io/f/manwgwpk" method = "POST">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value=""><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="">
+        </form>
+        
+        <form>
+          <input type="radio" id="male" name = "gender" value = "male">
+          <label for = "malee">Male</label><br>
+        </form>
+        
+        <form>
+        <input type="radio" id="female" name = "gender" value = "female">
+          <label for = "female">Female</label><br>
+        </form>
+  
+        <form>
+          <label for="address">Address:</label><br>
+          <input type="text" id="fname" value=""><br><br>
+        </form>
+        <form>
+            <input type="checkbox" id="uscitizen" name= "uscitizen" value="Are you a US Citizen?">
+            <label for="checkbox"> Are you a US Citizen?<label><br>
+            <input type="submit" value="Submit">
+          </form>   
+      </div>
+            
+    </div> 
+    
+</body>
+</html>
