@@ -12,3 +12,14 @@ nav a{background-color:#00ffff}
 
 .copyright{float:left;}
 .quote{float:right;}
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+ 
+}
