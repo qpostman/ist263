@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://laferger.github.io/ist263/lab12.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <script>
+      function WinnerMessage () {
+        document.getElementbyID("messages").innerHTML = "You Won!";
+      }
+      function TryAgain () {
+         document.getElementbyID("messages").innerHTML = "Wrong Shell - Try Again";
+      }
+      function ShuffleShells() {
+        document.getElementbyID("first").style.order = Math.floor((Math.random() * 3) + 2);
+      }
+    </script>
+    <style>
+      .container {
+        display: flex;
+      }
+      #first {order: 1;}
+      #second {order: 2;}
+      #third {order: 3;}
+    </style>
+    <link rel="stylesheet" href="./practice_files/animate2.css">
+</head>
+<body onload="ShuffleShells();">
+    <h1>Choose a Walnut</h1>
+    <div class="container">
+      <img src="./practice_files/walnut.png" alt="first walnut" id="first" onclick="WinnerMessage()">
+      <img src="./practice_files/walnut.png" alt="second walnut" id="second" onclick="TryAgain()">
+      <img src="./practice_files/walnut.png" alt="third walnut" id="third" onclick = "TryAgain()">
+    </div>
+    
+    <div id="messages"></div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
