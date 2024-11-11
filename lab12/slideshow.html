@@ -23,6 +23,43 @@
          #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {display:none;}
          #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {display: none;}
      </style>
+     <script>
+        function PlanetsOff () {
+            document.getElementId('mercury').style.display = 'none'
+            document.getElementId('mercuryinfo').style.display = 'none'
+           
+            document.getElementId('venus').style.display = 'none'
+            document.getElementId('venusinfo').style.display = 'none'
+            
+            document.getElementId('earth').style.display = 'none'
+            document.getElementId('earthinfo').style.display = 'none'
+
+            document.getElementId('mars').style.display = 'none'
+            document.getElementId('marsinfo').style.display = 'none'
+            
+            document.getElementId('jupiter').style.display = 'none'
+            document.getElementId('jupiterinfo').style.display = 'none'
+            
+            document.getElementId('saturn').style.display = 'none'
+            document.getElementId('saturninfo').style.display = 'none'
+            
+            document.getElementId('uranus').style.display = 'none'
+            document.getElementId('uranusinfo').style.display = 'none'
+            
+            document.getElementId('neptune').style.display = 'none'
+            document.getElementId('neptuneinfo').style.display = 'none'
+        }
+        function MercuryOn () {
+            document.getElementId('mercury').style.display = 'block'
+            document.getElementId('mercuryinfo').style.display = 'block'
+        }
+        function VenusOn () {
+            document.getElementId('venus').style.display = 'block'
+            document.getElementId('venusinfo').style.display = 'block'
+        }
+    
+
+     </script>
  </head>
  <body data-new-gr-c-s-check-loaded="14.1207.0" data-gr-ext-installed="">
  <div id="slideshow-container">
@@ -72,8 +109,8 @@
          </div>
      </div>
      <div id="thumbnails">
-         <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercurythumb">
-         <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venusthumb">
+         <img src="./Lab 12 Slideshow_files/mecury.jpg" alt="mercury" id="mercurythumb" onclick="PlanetsOff(); MercuryOn();">
+         <img src="./Lab 12 Slideshow_files/venus.jpg" alt="venus" id="venusthumb" onclick="PlanetsOff(); VenusOn;">
          <img src="./Lab 12 Slideshow_files/earth.jpg" alt="earth" id="earththumb">
          <img src="./Lab 12 Slideshow_files/mars.jpg" alt="mars" id="marsthumb">
          <img src="./Lab 12 Slideshow_files/jupiter.jpg" alt="jupiter" id="jupiterthumb">
