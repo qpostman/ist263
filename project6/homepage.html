@@ -4,33 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketThrill</title>
+    <style>
+        nav ul {
+            display: flex;
+            justify-content:center;
+            list-style: none;
+            padding: 3px;
+            margin: 0px;
+            word-spacing: -3px;
+        }
+        .centerimage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        .Row1{
+            display: flex;
+            gap: 10px;
+            flex-direction:row;
+            justify-content: left;
+        }
+        body{
+            background-color: #7091E6
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href = "homepage.html">Home</a></li>
-            <li><a href = "page2.html">Events</a></li>
-            <li><a href = "page3.html"> Enhance</a></li>
+            <li><img src="home_icon.png" alt="Home" width="12"><a href = "homepage.html">Home|</a></li>
+            <li><img src="calendar_icon.png" alt="Events" width="12"><a href = "page2.html">Events|</a></li>
+            <li><img src="enhance.png" alt="Enhance" width="12"><a href = "page3.html"> Enhance</a></li>
         </ul>
     </nav>
+   
+    <div class="intro">
+        <h1 style="display: flex; justify-content: center;"> Welcome to TicketThrill</h1>
+        <p style="display: flex; justify-content: center; font-style: italic;">Your go-to guide for unforgettable sporting events!</p>
+    </div>
     
-    <h1>Welcome to TicketThrill</h1>
-    <p>Your go-to guide for unforgettable sporting events!</p>
-    <img src="homepage.jpg" alt="Fans">
-        
-    <h2>Why Live Sports Matter</h2>
-    <p>According to a 2023 study published in <a href="https://www.wellandgood.com/mental-health-benefits-of-watching-live-sports/#:~:text=Specifically%2C%20study%20subjects%20reported%20that,being%20worthwhile%2C%20and%20reduced%20loneliness" 
-    target="_blank">Frontiers of Public Health</a>, watching live sports not only boosts life satisfaction but reduces lonliness. Engaging in live sports fosters a sense of community and offers a mental break from daily life with added excitement
-    and memorable moments from just feet away. </p>
-
-    <h2>Our Mission</h2>
-    <p>As ticket prices and attendance drops, we want to reconnect fans with live sports. Our platform will help you experience live sports to the fullest, tailored to your preferences.</p>
-
-    <h2>How It Works</h2>
-    <ol>
-        <li>Select Your Sport</li>
-        <li>Choose Your Location</li>
-        <li>Set Your Budget</li>
-        <li>Get Recommendations</li>
-    </ol>
+    <div class="centerimage">
+        <img src="homepage.jpg" alt="Fans" width="500"> 
+    </div>
+    
+    <div class="Row1">
+        <h2>Why Live Sports Matter</h2>
+    </div>
 </html>
