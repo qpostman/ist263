@@ -6,12 +6,13 @@
     <title>Document</title>
     <script>
         function ChangeName() {
-            document.getElementById('Syracuse').innerHTML = "<p> Orange Nation </p>";
+            document.getElementById('Syracuse').innerHTML = "<p>Orange Nation</p>";
+            document.getElementById('Syracuse').style.color = "orange"
         }
     </script>
 </head>
 <body>
-    <div class="Syracuse">
+    <div id="Syracuse" onclick="ChangeName();">
         <p>Syracuse University</p>
     </div>
 </body>
