@@ -101,85 +101,83 @@
             width: 50px;
             height: auto;
         }
-        /* For mobile devices (up to 768px) */
-@media (max-width: 768px) {
-    /* Center the headings */
-    .Row1, .Row2, .Row3 {
-        display: flex;
-        flex-direction: column;  /* Stack items vertically */
-        align-items: center;     /* Center items horizontally */
-        margin: 5px 0;           /* Reduced vertical spacing */
-    }
+    @media (max-width: 768px) {
+        .Row1, .Row2, .Row3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+        }
 
-    h2 {
-        font-size: 22px;         /* Smaller heading font */
-        margin-top: 4px;         /* Further reduce top margin */
-    }
+        h2 {
+            font-size: 22px;
+            margin-top: 4px;
+        }
 
-    /* Adjust answer text sizes */
-    .Answer1, .Answer2, .Answer3 {
-        font-size: 16px;         /* Smaller font size */
-        padding: 8px;            /* Reduce padding */
-        text-align: center;      /* Center-align text */
-        margin-top: 4px;         /* Reduced margin */
-    }
+        .Answer1, .Answer2, .Answer3 {
+            font-size: 16px;
+            padding: 8px;
+            text-align: center;
+            margin-top: 4px;
+        }
 
-    /* Specifically bring Answer 3 closer to Row 3 */
-    .Answer3 {
-        margin-top: -10px;       /* Reduced margin to pull Answer 3 closer to Row 3 */
-    }
+         .Answer3 {
+            margin-top: -150px;
+            margin-right: 250px;
+            text-align: left;
+         }
+        .Row3 {
+            margin-top: -120px;
+        }
 
     .center-image {
-        width: 90%;              /* Resize image */
-        margin: 10px auto;       /* Reduced spacing around image */
+        width: 90%;
+        margin: 10px auto;
     }
 
     .intro h1 {
-        font-size: 24px;         /* Smaller font size for header */
+        font-size: 24px;
     }
 
     .intro img {
-        width: 40px;             /* Adjust logo/icon size */
+        width: 40px;
     }
 }
 
-/* For very small screens (up to 480px) */
 @media (max-width: 480px) {
     .Row1, .Row2, .Row3 {
-        padding: 5px;            /* Less padding on small screens */
-        margin: 5px 0;           /* Further reduce margin between rows */
+        padding: 5px;
+        margin: 5px 0;
     }
 
     h2 {
-        font-size: 18px;         /* Further reduce font size for headings */
-        margin-top: 2px;         /* Smaller margin between heading and text */
+        font-size: 18px;
+        margin-top: 2px;
     }
 
-    /* Further reduce answer text size */
     .Answer1, .Answer2, .Answer3 {
-        font-size: 14px;         /* Reduce font size more */
-        padding: 6px;            /* Reduce padding further */
-        margin-top: 2px;         /* Further reduced margin between answer and heading */
+        font-size: 14px;
+        padding: 6px;
+        margin-top: 2px;
     }
 
-    /* Specifically bring Answer 3 closer to Row 3 */
     .Answer3 {
-        margin-top: -5px;        /* Further reduced margin to pull Answer 3 even closer */
+        margin-top: -5px;
     }
 
     .center-image {
-        width: 95%;              /* Further reduce image size */
+        width: 95%;
     }
 
     .intro h1 {
-        font-size: 20px;         /* Reduce size of the introductory text */
+        font-size: 20px;
     }
 
     .intro img {
-        width: 35px;             /* Reduce icon size for very small screens */
+        width: 35px;
     }
 }
-
+ 
     </style>
 </head>
 <body>
