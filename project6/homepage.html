@@ -101,47 +101,61 @@
             width: 50px;
             height: auto;
         }
-        @media (max-width: 767px) {
-    
-    /* Adjust row and content sizes */
+        /* Responsive layout for mobile devices */
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Adjust text size for smaller devices */
     .Row1 h2, .Row2 h2, .Row3 h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .Answer1, .Answer2, .Answer3 {
         font-size: 14px;
-        padding: 15px;
     }
 
-    /* Adjusting the centered image */
+    /* Make the image scale more appropriately on smaller devices */
     .center-image {
-        width: 80%;
+        width: 90%;
+        max-width: 100%;
+        margin: 10px auto;
     }
 
-    /* Stacking navigation items vertically */
+    /* Stack the navigation items vertically for smaller screens */
     nav ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        padding: 0;
     }
 
     nav ul li {
-        justify-content: center;
+        margin: 5px 0;
     }
 
-    /* Adjusting the intro header */
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Adjust the intro heading for smaller screens */
     .intro h1 {
         font-size: 22px;
-        margin: 10px;
     }
 
-    /* Adjust text styles for smaller screens */
+    .intro img {
+        width: 40px;
+    }
+
     .intro p {
         font-size: 16px;
     }
 }
 
-/* Further adjustments for smaller screens (portrait iPhone XS and below) */
+/* Further adjustments for very small screens (iPhone SE, etc.) */
 @media (max-width: 480px) {
     .Row1 h2, .Row2 h2, .Row3 h2 {
         font-size: 18px;
@@ -149,17 +163,19 @@
 
     .Answer1, .Answer2, .Answer3 {
         font-size: 12px;
+        padding: 10px;
     }
 
     .center-image {
-        width: 90%;
+        width: 100%;
+        max-width: 100%;
     }
 
     .intro h1 {
         font-size: 18px;
     }
 
-    nav ul li {
+    .intro p {
         font-size: 14px;
     }
 }
