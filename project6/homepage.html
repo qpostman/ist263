@@ -101,6 +101,68 @@
             width: 50px;
             height: auto;
         }
+        @media (max-width: 767px) {
+    
+    /* Adjust row and content sizes */
+    .Row1 h2, .Row2 h2, .Row3 h2 {
+        font-size: 24px;
+    }
+
+    .Answer1, .Answer2, .Answer3 {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    /* Adjusting the centered image */
+    .center-image {
+        width: 80%;
+    }
+
+    /* Stacking navigation items vertically */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        justify-content: center;
+    }
+
+    /* Adjusting the intro header */
+    .intro h1 {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    /* Adjust text styles for smaller screens */
+    .intro p {
+        font-size: 16px;
+    }
+}
+
+/* Further adjustments for smaller screens (portrait iPhone XS and below) */
+@media (max-width: 480px) {
+    .Row1 h2, .Row2 h2, .Row3 h2 {
+        font-size: 18px;
+    }
+
+    .Answer1, .Answer2, .Answer3 {
+        font-size: 12px;
+    }
+
+    .center-image {
+        width: 90%;
+    }
+
+    .intro h1 {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body>
@@ -122,8 +184,8 @@
 
     <div class="center-image">
         <img src="homepage.jpg" alt="Fans">
-    </div>
-<div class = "container">    
+    </div>  
+    
     <div class="Row1">
         <h2>Why Live Sports Matter</h2>
     </div>
@@ -161,6 +223,5 @@
         </ol>
     </div>
 
-</div>
 </body>
 </html>
