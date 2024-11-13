@@ -7,10 +7,10 @@
     <style>
         nav ul {
             display: flex;
-            justify-content:center;
+            justify-content: center;
             list-style: none;
             padding: 3px;
-            margin: 0px;
+            margin: 0;
             gap: 10px;
         }
         nav ul li {
@@ -18,9 +18,9 @@
             align-items: center;
         }
         nav ul li img {
-            margin-right: 5px
+            margin-right: 5px;
         }
-        .center-image{
+        .center-image {
             display: block;
             margin: 20px auto;
             width: 50%;
@@ -29,60 +29,66 @@
             border: 5px solid #EDE8F5;
             box-sizing: border-box;
         }
-
-        .center-image img{
+        .center-image img {
             width: 100%;
-            height:100%;
-            object-fit: fill;
+            height: 100%;
+            object-fit: contain;
         }
-        .Row1{
+        .Row1 {
             display: flex;
-            gap: 10px;
-            flex-direction:row;
-            justify-content: left;
-            padding:10px
+            justify-content: flex-start;
+            padding: 10px;
+            margin-bottom: -30px;
+        }
+        .Row2 {
+            display: flex;
+            justify-content: flex-end;
+            padding:10px;
+            margin-bottom: 30px;
         }
         .Answer1 {
-            display:flex;
-            flex-direction: column;
+            display: block;
+            padding: 10px;
+            text-align: left;
+            margin-top: -10px;
         }
-        body{
+        body {
             background-color: #7091E6;
-            font-family: 'Calibri, sans-serif';
+            font-family: 'Calibri', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
+            display: flex;
+            flex-direction: column;
         }
         .intro {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap:10px;
-            margin-top:20px;
+            gap: 10px;
+            margin-top: 20px;
         }
         .intro h1 {
             margin: 0;
             padding: 5px 0;
         }
-
         .intro img {
             width: 50px;
             height: auto;
         }
-
     </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><img src="home_icon.png" alt="Home" width="12"><a href = "homepage.html">Home</a></li>
-            <li><img src="calendar_icon.png" alt="Events" width="12"><a href = "page2.html">Events</a></li>
-            <li><img src="enhance.png" alt="Enhance" width="12"><a href = "page3.html"> Enhance</a></li>
+            <li><img src="home_icon.png" alt="Home" width="12"><a href="homepage.html">Home</a></li>
+            <li><img src="calendar_icon.png" alt="Events" width="12"><a href="page2.html">Events</a></li>
+            <li><img src="enhance.png" alt="Enhance" width="12"><a href="page3.html"> Enhance</a></li>
         </ul>
     </nav>
-   
+
     <div class="intro">
-        <h1> Welcome to TicketThrill</h1>
+        <h1>Welcome to TicketThrill</h1>
     </div>
 
     <div class="explanation">
@@ -97,11 +103,19 @@
         <h2>Why Live Sports Matter</h2>
     </div>
 
-    <div class = "Answer1">
-        <p>According to a 2023 study published in <a href="https://www.wellandgood.com/mental-health-benefits-of-watching-live-sports/#:~:text=Specifically%2C%20study%20subjects%20reported%20that,being%20worthwhile%2C%20and%20reduced%20loneliness" 
-            target="_blank">Frontiers of Public Health</a>, watching live sports not only boosts life satisfaction but reduces loneliness. Engaging in live sports fosters a sense of community and offers a mental break from daily life with added excitement
-            and memorable moments from just feet away.
+    <div class="Answer1">
+        <p>According to a 2023 study published in <a href="https://www.wellandgood.com/mental-health-benefits-of-watching-live-sports/#:~:text=Specifically%2C%20study%20subjects%20reported%20that,being%20worthwhile%2C%20and%20reduced%20loneliness" target="_blank">Frontiers of Public Health</a>,watching 
+            <br>live sports not only boosts life satisfaction but reduces loneliness. Engaging in 
+            <br>live sports fosters a sense of community and offers a mental break from 
+            <br>daily life with added excitement and memorable moments from just feet away.
+            <br> At TicketThrill, we want to provide you with best possible oppurunities to escape
+            <br>from work obligations, bordeom, painful memories, and the pressures of everyday life 
+            <br>to go out and see live sports at whatever level you want to. 
         </p>
     </div>
+    <div class = "Row2">
+        <h2>Our Mission</h2>
+    </div>
+
 </body>
 </html>
