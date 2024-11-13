@@ -101,84 +101,75 @@
             width: 50px;
             height: auto;
         }
-        /* Responsive layout for mobile devices */
-@media (max-width: 767px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-        padding: 10px;
-    }
-
-    /* Adjust text size for smaller devices */
-    .Row1 h2, .Row2 h2, .Row3 h2 {
-        font-size: 20px;
-    }
-
-    .Answer1, .Answer2, .Answer3 {
-        font-size: 14px;
-    }
-
-    /* Make the image scale more appropriately on smaller devices */
-    .center-image {
-        width: 90%;
-        max-width: 100%;
-        margin: 10px auto;
-    }
-
-    /* Stack the navigation items vertically for smaller screens */
-    nav ul {
+    /* For mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    /* Center the headings */
+    .Row1, .Row2, .Row3 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+        flex-direction: column;  /* Stack items vertically */
+        align-items: center;     /* Center items horizontally */
+        margin: 10px 0;          /* Reduced vertical spacing */
     }
 
-    nav ul li {
-        margin: 5px 0;
+    h2 {
+        font-size: 22px;         /* Smaller heading font */
+        margin-top: 8px;         /* Adjust top margin */
     }
 
-    nav ul li a {
-        font-size: 16px;
+    /* Adjust answer text sizes */
+    .Answer1, .Answer2, .Answer3 {
+        font-size: 16px;         /* Smaller font size */
+        padding: 10px;           /* Reduced padding */
+        text-align: center;      /* Center-align text */
+        margin-top: 8px;         /* Reduced margin */
     }
 
-    /* Adjust the intro heading for smaller screens */
+    .center-image {
+        width: 90%;              /* Resize image */
+        margin: 12px auto;       /* Reduced spacing around image */
+    }
+
     .intro h1 {
-        font-size: 22px;
+        font-size: 24px;         /* Smaller font size for header */
     }
 
     .intro img {
-        width: 40px;
-    }
-
-    .intro p {
-        font-size: 16px;
+        width: 40px;             /* Adjust logo/icon size */
     }
 }
 
-/* Further adjustments for very small screens (iPhone SE, etc.) */
+/* For very small screens (up to 480px) */
 @media (max-width: 480px) {
-    .Row1 h2, .Row2 h2, .Row3 h2 {
-        font-size: 18px;
+    .Row1, .Row2, .Row3 {
+        padding: 5px;            /* Less padding on small screens */
+        margin: 5px 0;           /* Further reduce margin between rows */
     }
 
+    h2 {
+        font-size: 18px;         /* Further reduce font size for headings */
+        margin-top: 6px;         /* Smaller margin between heading and text */
+    }
+
+    /* Further reduce answer text size */
     .Answer1, .Answer2, .Answer3 {
-        font-size: 12px;
-        padding: 10px;
+        font-size: 14px;         /* Reduce font size more */
+        padding: 8px;            /* Reduce padding */
+        margin-top: 6px;         /* Reduced margin between answer and heading */
     }
 
     .center-image {
-        width: 100%;
-        max-width: 100%;
+        width: 95%;              /* Further reduce image size */
     }
 
     .intro h1 {
-        font-size: 18px;
+        font-size: 20px;         /* Reduce size of the introductory text */
     }
 
-    .intro p {
-        font-size: 14px;
+    .intro img {
+        width: 35px;             /* Reduce icon size for very small screens */
     }
 }
+
     </style>
 </head>
 <body>
