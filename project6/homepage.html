@@ -26,8 +26,14 @@
             width: 50%;
             max-width: 500px;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 4px #8697c4;
+            border: 5px solid #EDE8F5;
+            box-sizing: border-box;
+        }
+
+        .center-image img{
+            width: 100%;
+            height:100%;
+            object-fit: cover;
         }
         .Row1{
             display: flex;
@@ -38,15 +44,26 @@
         }
         body{
             background-color: #7091E6;
-            font-family: 'Calibri, san-serif';
+            font-family: 'Calibri, sans-serif';
             margin: 0;
             padding: 0;
             text-align: center;
-            line-height: 1.6;
         }
-        .intro h1, .intro p {
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+            margin-top:20px;
+        }
+        .intro h1 {
             margin: 0;
             padding: 5px 0;
+        }
+
+        .intro img {
+            width: 50px;
+            height: auto;
         }
 
     </style>
@@ -61,16 +78,25 @@
     </nav>
    
     <div class="intro">
-        <h1 style="display: flex; justify-content: center;"> Welcome to TicketThrill</h1>
-        <p style="display: flex; justify-content: center; font-style: italic;">Your go-to guide for unforgettable sporting events!</p>
+        <h1> Welcome to TicketThrill</h1>
     </div>
-    
+
+    <div class="explanation">
+        <p style="text-align: center; font-style: italic; margin-top: 5px;">Your go-to guide for unforgettable sporting events!</p>
+    </div>
+
     <div class="center-image">
         <img src="homepage.jpg" alt="Fans">
     </div>
     
     <div class="Row1">
         <h2>Why Live Sports Matter</h2>
+    </div>
+
+    <div class = "Answer1"></div>
+        <p>According to a 2023 study published in <a href="https://www.wellandgood.com/mental-health-benefits-of-watching-live-sports/#:~:text=Specifically%2C%20study%20subjects%20reported%20that,being%20worthwhile%2C%20and%20reduced%20loneliness" 
+            target="_blank">Frontiers of Public Health</a>, watching live sports not only boosts life satisfaction but reduces loneliness. Engaging in live sports fosters a sense of community and offers a mental break from daily life with added excitement
+            and memorable moments from just feet away.</p>
     </div>
 </body>
 </html>
