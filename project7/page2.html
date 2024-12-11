@@ -32,7 +32,7 @@
             float: left;
             width: 30%;
             border: black solid 5px;
-            margin-top: 200px;
+            margin-top: 70px;
             margin-right: 10px;
             
         }
@@ -52,6 +52,11 @@
             font-size: 20px;
         
         }
+        .destination {
+            position: relative;
+            top: -440px;
+            right: 100px;
+        }
     </style>
 </head>
 <body>
@@ -69,27 +74,37 @@
         <li style = "font-size: 25px;">Baseball</li>
         <li style = "font-size: 25px;">Soccer</li>
         <li style = "font-size: 25px;">Hockey</li>
-        <li style = "font-size: 25px;">Lacrosse</li>
+        <li style = "font-size: 25px;">Rugby</li>
+        <li style = "font-size: 25px;">Hockey</li>
+        <li style = "font-size: 25px;">Cricket</li>
+        <li style = "font-size: 25px;">Volleyball</li>
+        <li style = "font-size: 25px;">Tennis</li>
     </ul>
     <img src="secondpage.jpeg" alt="Sports Crowd" class="right">
     <img src="thirdpage.png" alt="Recommendations" class="left">
     
-    <form action = "https://formspree.io/f/manwgwpk" method = "POST" >
+    <form action = "https://formspree.io/f/manwgwpk" method = "POST" style="position: relative; right: 510px;">
         <label for="sports">What Sport Do You Want To Watch?</label><br>
         <input type="text" id="sports" name="sports" value=""><br>
         <input type="submit" value ="Submit">
     </form>
     </div>
-    <h2>Choose Your Destination:</h2>
-    <ul>
+    <div class="destination">
+    <h1>Choose Your Destination:</h1>
+    <ul style="margin-top: -5px; font-size: 25px;">
         <li>New York</li>
         <li>London</li>
         <li>Paris</li>
         <li>Madrid</li>
         <li>Tokyo</li>
         <li>Sao Paulo</li>
+        <li>Munich</li>
+        <li>Los Angelese</li>
+        <li>Rosarió</li>
+        <li>Syracuse</li>
     </ul>
-    <form action = "https://formspree.io/f/manwgwpk" method = "POST">
+    </div>
+    <form action = "https://formspree.io/f/manwgwpk" method = "POST" style="position: relative; bottom: 450px; right: 120px;">
         <label for="country">What Country Do You Want To Watch Your Sport In?</label><br>
         <input type="text" id="country" name="country" value=""><br>
         <input type="submit" value ="Submit">
