@@ -23,10 +23,10 @@
         .center-image {
             display: block;
             margin: 20px auto;
-            width: 50%;
+            width: 100%;
             max-width: 500px;
             height: auto;
-            border: 5px solid #EDE8F5;
+            border: 4px black solid
         }
         .center-image img {
             width: 100%;
@@ -38,6 +38,7 @@
             justify-content: flex-start;
             padding: 10px;
             margin-bottom: -30px;
+            color: #3d52a0;
         }
         .Row2 {
             display: flex;
@@ -45,6 +46,7 @@
             padding: 10px;
             margin-top: -230px;
             margin-right: -20px;
+            color: #3d52a0;
         }
         .Row3 {
             display: flex;
@@ -54,20 +56,20 @@
             margin-right: 100px;
             align-items: center;
             text-align: center;
+            color: #3d52a0;
         }
         .Answer1 {
             display: block;
             padding: 10px;
             text-align: left;
             margin-top: -10px;
+            font-size: 20px;
         }
         .Answer2 {
             display: block;
             padding: 10px;
             text-align: center;
-            margin-right: -75px;
-            margin-top: -40px;
-            padding-left: 40px;
+            font-size:20px
         }
         .Answer3 {
             display: flex;
@@ -78,8 +80,8 @@
             text-align: left;
         }
         body {
-            background-color: #7091E6;
-            font-family: 'Calibri', sans-serif;
+            background-color: #EDE8F5;
+            font-family: 'Georgia', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -92,6 +94,7 @@
             justify-content: center;
             gap: 10px;
             margin-top: 20px;
+            color: #3d52a0;
         }
         .intro h1 {
             margin: 0;
@@ -100,6 +103,9 @@
         .intro img {
             width: 50px;
             height: auto;
+        }
+        a:visited {
+            color: blue;
         }
     @media (max-width: 767px) {
         .Row1, .Row2, .Row3 {
@@ -160,11 +166,8 @@
 
     <div class="explanation">
         <p style="text-align: center; font-style: italic; margin-top: 5px;">Your go-to guide for unforgettable sporting events!</p>
-    </div>
 
-    <div class="center-image">
-        <img src="homepage.jpg" alt="Fans">
-    </div>  
+    <img src="homepage.jpg", alt="Fans", class="center-image">
     
     <div class="Row1">
         <h2>Why Live Sports Matter</h2>
