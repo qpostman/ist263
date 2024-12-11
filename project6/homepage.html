@@ -107,48 +107,40 @@
         a:visited {
             color: blue;
         }
-    @media (max-width: 767px) {
-        .Row1, .Row2, .Row3 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 5px;
-        }
-        h2 {
-            font-size: 22px;
-            margin-top: 4px;
-        }
-        .Answer1, .Answer2, .Answer3 {
-            font-size: 13px;
-            padding: 10px;
-            text-align: center;
-            margin-top: 8px;
-        }
-         .Answer3 {
-            margin-top: -160px;
-            margin-right: 150px;
-            text-align: left;
-         }
-        .Row3 {
-            margin-top: -120px;
-        }
-        .Answer2 {
-            margin-top: -50px;
-        }
-        .Answer1 {
-            margin-top: -50px ;
-        }
-        .center-image {
-            width: 90%;
-            margin: 10px auto;
-        }
-        .intro h1 {
-            font-size: 24px;
-        }
-        .intro img {
-            width: 40px;
-        }
+@media only screen and (max-width: 430px) {
+    body {
+        font-size: 18px;
+        padding: 10px;
     }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .center-image {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .Row1, .Row2, .Row3 {
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .Answer1, .Answer2, .Answer3 {
+        padding: 10px;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    ol, ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+}
     </style>
 </head>
 <body>

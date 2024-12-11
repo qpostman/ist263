@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhance</title>
+    <meta name="description" content="TicketThrill connects sports fans with live events tailored to their preferences. Get personalized recommendations for sports, stadiums, travel, and budget, ensuring the best experience at any game, anywhere.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+          nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 3px;
+            margin: 0;
+            gap: 10px;
+        }
+        nav ul li {
+            display: flex;
+            align-items: center;
+        }
+        nav ul li img {
+            margin-right: 5px;
+        }
+        a:visited{
+            color: blue;
+        }
+        .chicago {
+            margin-top: -100px;
+        }
+        body {
+            font-family: 'Georgia';
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href = "homepage.html">Home</a></li>
-            <li><a href = "page2.html">Events</a></li>
-            <li><a href = "page3.html"> Enhance</a></li>
+            <li><img src="home_icon.png" alt="Home" width="12"><a href="homepage.html">Home</a></li>
+            <li><img src="calendar_icon.png" alt="Events" width="12"><a href="page2.html">Events</a></li>
+            <li><img src="enhance.png" alt="Enhance" width="12"><a href="page3.html"> Enhance</a></li>
         </ul>
     </nav>
-    <img src="thirdpage.png" alt="Enhance Your Experience">
-    
     <h1>Flights</h1>
     <h2>Examples</h2>
     <p>Los Angeles (LAX) to New York (JFK/EWR)
@@ -23,11 +49,13 @@
             <li>Duration: 5 Hours 30 Minutes</li>
         </ul>
     </p>
-    <p> Chicgao (ORD) to Miami (MIA)</p>
+    <div class="chicago">
+        <p>Chicago (ORD) to Miami (MIA)</p>
         <ul>
             <li>Price Range: $150-$300</li>
             <li>Duration: 3 hours</li>
         </ul>
+    </div>
     <p>Dallas (DFW) to Las Vegas (LAS)</p>
         <ul>
             <li>Price Range: $100-$250</li>
@@ -44,6 +72,7 @@
             <li>Prices tend to increase as the departure date approaches</li>
             <li>Being flexible with your travel dates can help you find cheaper options</li>
         </ul>
+    </div>
 
     <h1>Accommodations</h1>
     <p> Here Is a Possible List of Hotels To Stay In If You Wanted to Attend a Yankees World Series Game:</p>
@@ -77,5 +106,6 @@
         ⭐⭐⭐⭐⭐ Lisa K. - London</p>
     <p> "Great concept! I wish there were more sports options available, but overall, it was a good experience."<br>
         ⭐⭐⭐ David R. - Phoenix</p>
+</div>
 </body>
 </html>
